@@ -1,4 +1,4 @@
-CUSTOM IMAGE JSON
+CUSTOM IMAGE TEMPLATE JSON
 {
     "apiVersion": "2024-02-01",
     "id": "/subscriptions/4b0ff651-fb9c-4421-b4f0-2d16aa10451e/resourceGroups/rg-example-resources/providers/Microsoft.VirtualMachineImages/imageTemplates/example-custom-image-template",
