@@ -1,0 +1,27 @@
+CUSTOM ROLE FOR MY MANAGED IDENTITY
+{
+    "id": "/subscriptions/4b0ff651-fb9c-4421-b4f0-2d16aa10451e/providers/Microsoft.Authorization/roleDefinitions/2a7f859f-e878-427b-bce6-b3e2dda985ed",
+    "properties": {
+        "roleName": "SUI Custom Image Template Creator",
+        "description": "Can read and write custom image templates to the compute gallery",
+        "assignableScopes": [
+            "/subscriptions/4b0ff651-fb9c-4421-b4f0-2d16aa10451e"
+        ],
+        "permissions": [
+            {
+                "actions": [
+                    "Microsoft.Compute/galleries/read",
+                    "Microsoft.Compute/galleries/images/read",
+                    "Microsoft.Compute/galleries/images/versions/read",
+                    "Microsoft.Compute/galleries/images/versions/write",
+                    "Microsoft.Compute/images/write",
+                    "Microsoft.Compute/images/read",
+                    "Microsoft.Compute/images/delete"
+                ],
+                "notActions": [],
+                "dataActions": [],
+                "notDataActions": []
+            }
+        ]
+    }
+}

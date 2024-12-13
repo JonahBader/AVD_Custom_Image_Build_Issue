@@ -1,0 +1,107 @@
+ROLE ASSIGNMENTS IN MY SUBSCRIPTION
+[
+    {
+        "RoleAssignmentId": "28033766-69f2-4efa-b7d7-6663f0d7f8e8",
+        "Scope": "/subscriptions/4b0ff651-fb9c-4421-b4f0-2d16aa10451e",
+        "DisplayName": "b9fe9104dd564741b900c34a",
+        "SignInName": "",
+        "RoleDefinitionName": "Contributor",
+        "RoleDefinitionId": "/subscriptions/4b0ff651-fb9c-4421-b4f0-2d16aa10451e/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+        "ObjectId": "6471f5ea-20d4-475b-95ff-fb39ad50af07",
+        "ObjectType": "ServicePrincipal",
+        "RoleAssignmentDescription": "",
+        "ConditionVersion": "",
+        "Condition": ""
+    },
+    {
+        "RoleAssignmentId": "cb9e0a5a-f928-46af-9eca-c3dd2f7ee8e9",
+        "Scope": "/subscriptions/4b0ff651-fb9c-4421-b4f0-2d16aa10451e",
+        "DisplayName": "mid-customImageTemplateCreator",
+        "SignInName": "/subscriptions/4b0ff651-fb9c-4421-b4f0-2d16aa10451e/resourcegroups/rg-test1-EastUS/providers/Microsoft.ManagedIdentity/userAssignedIdentities/mid-customImageTemplateCreator",
+        "RoleDefinitionName": "SUI Custom Image Template Creator",
+        "RoleDefinitionId": "/subscriptions/4b0ff651-fb9c-4421-b4f0-2d16aa10451e/providers/Microsoft.Authorization/roleDefinitions/2a7f859f-e878-427b-bce6-b3e2dda985ed",
+        "ObjectId": "e25328fe-0fb8-4e8f-aeab-0e239e0df755",
+        "ObjectType": "ServicePrincipal",
+        "RoleAssignmentDescription": "Role assigned so the mid can create customer image templates",
+        "ConditionVersion": "",
+        "Condition": ""
+    },
+    {
+        "RoleAssignmentId": "50f13f75-9d77-4575-97b8-19661372e549",
+        "Scope": "/subscriptions/4b0ff651-fb9c-4421-b4f0-2d16aa10451e",
+        "DisplayName": "Jonah Bader",
+        "SignInName": "jab_su-inc.com#EXT#@k12sas.onmicrosoft.com",
+        "RoleDefinitionName": "Owner",
+        "RoleDefinitionId": "/subscriptions/4b0ff651-fb9c-4421-b4f0-2d16aa10451e/providers/Microsoft.Authorization/roleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+        "ObjectId": "49ee47f8-236b-4a78-8d1d-c1e99224eb40",
+        "ObjectType": "User",
+        "RoleAssignmentDescription": "",
+        "ConditionVersion": "",
+        "Condition": ""
+    },
+    {
+        "RoleAssignmentId": "0cc72cd9-bf6a-48be-bec5-f590a0af1571",
+        "Scope": "/subscriptions/4b0ff651-fb9c-4421-b4f0-2d16aa10451e/resourceGroups/rg-test1-EastUS/providers/Microsoft.Compute/virtualMachines/vm-test2",
+        "DisplayName": "Jonah Bader",
+        "SignInName": "jab_su-inc.com#EXT#@k12sas.onmicrosoft.com",
+        "RoleDefinitionName": "Virtual Machine Administrator Login",
+        "RoleDefinitionId": "/subscriptions/4b0ff651-fb9c-4421-b4f0-2d16aa10451e/providers/Microsoft.Authorization/roleDefinitions/1c0163c0-47e6-4577-8991-ea5c82e286e4",
+        "ObjectId": "49ee47f8-236b-4a78-8d1d-c1e99224eb40",
+        "ObjectType": "User",
+        "RoleAssignmentDescription": "",
+        "ConditionVersion": "",
+        "Condition": ""
+    },
+    {
+        "RoleAssignmentId": "6d69f595-9c78-4b6c-a170-588417d5e057",
+        "Scope": "/subscriptions/4b0ff651-fb9c-4421-b4f0-2d16aa10451e/resourceGroups/rg-test1-EastUS/providers/Microsoft.DesktopVirtualization/applicationgroups/hp-test1-EastUS-DAG",
+        "DisplayName": "Jonah Bader",
+        "SignInName": "jab_su-inc.com#EXT#@k12sas.onmicrosoft.com",
+        "RoleDefinitionName": "Desktop Virtualization User",
+        "RoleDefinitionId": "/subscriptions/4b0ff651-fb9c-4421-b4f0-2d16aa10451e/providers/Microsoft.Authorization/roleDefinitions/1d18fff3-a72a-46b5-b4a9-0b38a3cd7e63",
+        "ObjectId": "49ee47f8-236b-4a78-8d1d-c1e99224eb40",
+        "ObjectType": "User",
+        "RoleAssignmentDescription": "",
+        "ConditionVersion": "",
+        "Condition": ""
+    },
+    {
+        "RoleAssignmentId": "211e5a49-02fb-4b18-8689-f7d951a2e6ee",
+        "Scope": "/subscriptions/4b0ff651-fb9c-4421-b4f0-2d16aa10451e/resourceGroups/rg-test1-EastUS",
+        "DisplayName": "Jonah Sandbox-AVD Users",
+        "SignInName": "",
+        "RoleDefinitionName": "Virtual Machine User Login",
+        "RoleDefinitionId": "/subscriptions/4b0ff651-fb9c-4421-b4f0-2d16aa10451e/providers/Microsoft.Authorization/roleDefinitions/fb879df8-f326-4884-b1cf-06f3ad86be52",
+        "ObjectId": "93d81d63-d46d-4ef1-9ab2-aa009021be29",
+        "ObjectType": "Group",
+        "RoleAssignmentDescription": "",
+        "ConditionVersion": "",
+        "Condition": ""
+    },
+    {
+        "RoleAssignmentId": "a873c147-20f7-408f-9436-3686577e1023",
+        "Scope": "/subscriptions/4b0ff651-fb9c-4421-b4f0-2d16aa10451e/resourceGroups/rg-test1-EastUS/providers/Microsoft.DesktopVirtualization/applicationgroups/hp-test2-EastUS-DAG",
+        "DisplayName": "Jonah Sandbox-AVD Users",
+        "SignInName": "",
+        "RoleDefinitionName": "Desktop Virtualization User",
+        "RoleDefinitionId": "/subscriptions/4b0ff651-fb9c-4421-b4f0-2d16aa10451e/providers/Microsoft.Authorization/roleDefinitions/1d18fff3-a72a-46b5-b4a9-0b38a3cd7e63",
+        "ObjectId": "93d81d63-d46d-4ef1-9ab2-aa009021be29",
+        "ObjectType": "Group",
+        "RoleAssignmentDescription": "",
+        "ConditionVersion": "",
+        "Condition": ""
+    },
+    {
+        "RoleAssignmentId": "2e33b0a5-c890-4035-970c-d2a9d436baf5",
+        "Scope": "/subscriptions/4b0ff651-fb9c-4421-b4f0-2d16aa10451e",
+        "DisplayName": "TJ Chaplin",
+        "SignInName": "tjc@k12sas.com",
+        "RoleDefinitionName": "Owner",
+        "RoleDefinitionId": "/subscriptions/4b0ff651-fb9c-4421-b4f0-2d16aa10451e/providers/Microsoft.Authorization/roleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+        "ObjectId": "f9d8b7db-7c66-48ef-a435-a2d21ceae273",
+        "ObjectType": "User",
+        "RoleAssignmentDescription": "",
+        "ConditionVersion": "",
+        "Condition": ""
+    }
+]

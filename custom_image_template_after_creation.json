@@ -1,0 +1,90 @@
+CUSTOM IMAGE JSON
+{
+    "apiVersion": "2024-02-01",
+    "id": "/subscriptions/4b0ff651-fb9c-4421-b4f0-2d16aa10451e/resourceGroups/rg-example-resources/providers/Microsoft.VirtualMachineImages/imageTemplates/example-custom-image-template",
+    "name": "example-custom-image-template",
+    "type": "microsoft.virtualmachineimages/imagetemplates",
+    "location": "eastus",
+    "tags": {
+        "AVD_IMAGE_TEMPLATE": "AVD_IMAGE_TEMPLATE",
+        "CreatedBy": "Jonah Bader"
+    },
+    "identity": {
+        "type": "UserAssigned",
+        "userAssignedIdentities": {
+            "/subscriptions/4b0ff651-fb9c-4421-b4f0-2d16aa10451e/resourcegroups/rg-test1-EastUS/providers/Microsoft.ManagedIdentity/userAssignedIdentities/mid-customImageTemplateCreator": {
+                "clientId": "70e0ced1-4797-4ce3-9291-e1f6cdeae140",
+                "principalId": "e25328fe-0fb8-4e8f-aeab-0e239e0df755"
+            }
+        }
+    },
+    "properties": {
+        "buildTimeoutInMinutes": 0,
+        "customize": [
+            {
+                "destination": "C:\\AVDImage\\installLanguagePacks.ps1",
+                "name": "avdBuiltInScript_installLanguagePacks",
+                "sha256Checksum": "519f1dcb41c15dc1726f28c51c11fb60876304ab9eb9535e70015cdb704a61b2",
+                "sourceUri": "https://raw.githubusercontent.com/Azure/RDS-Templates/master/CustomImageTemplateScripts/CustomImageTemplateScripts_2024-03-27/InstallLanguagePacks.ps1",
+                "type": "File"
+            },
+            {
+                "inline": [
+                    "C:\\AVDImage\\installLanguagePacks.ps1 -LanguageList \"English (United States)\""
+                ],
+                "name": "avdBuiltInScript_installLanguagePacks-parameter",
+                "runAsSystem": true,
+                "runElevated": true,
+                "type": "PowerShell"
+            },
+            {
+                "name": "avdBuiltInScript_installLanguagePacks-windowsUpdate",
+                "searchCriteria": "",
+                "type": "WindowsUpdate",
+                "updateLimit": 0
+            },
+            {
+                "name": "avdBuiltInScript_installLanguagePacks-windowsRestart",
+                "restartCheckCommand": "",
+                "restartCommand": "",
+                "restartTimeout": "10m",
+                "type": "WindowsRestart"
+            },
+            {
+                "name": "avdBuiltInScript_adminSysPrep",
+                "runAsSystem": true,
+                "runElevated": true,
+                "scriptUri": "https://raw.githubusercontent.com/Azure/RDS-Templates/master/CustomImageTemplateScripts/CustomImageTemplateScripts_2024-03-27/AdminSysPrep.ps1",
+                "sha256Checksum": "1dcaba4823f9963c9e51c5ce0adce5f546f65ef6034c364ef7325a0451bd9de9",
+                "type": "PowerShell"
+            }
+        ],
+        "distribute": [
+            {
+                "artifactTags": {},
+                "excludeFromLatest": false,
+                "galleryImageId": "/subscriptions/4b0ff651-fb9c-4421-b4f0-2d16aa10451e/resourcegroups/rg-example-resources/providers/microsoft.compute/galleries/mylocalgallery/images/example-image-definition",
+                "replicationRegions": [
+                    "eastus"
+                ],
+                "runOutputName": "Empty_Output_Name",
+                "type": "SharedImage"
+            }
+        ],
+        "exactStagingResourceGroup": "/subscriptions/4b0ff651-fb9c-4421-b4f0-2d16aa10451e/resourceGroups/IT_rg-example-resources_example-custom-imag_d5fbf52b-d59b-4b9f-b3f5-7b035478dc33",
+        "provisioningState": "Succeeded",
+        "source": {
+            "exactVersion": "26100.2605.241207",
+            "offer": "windows-11",
+            "publisher": "microsoftwindowsdesktop",
+            "sku": "win11-24h2-avd",
+            "type": "PlatformImage",
+            "version": "latest"
+        },
+        "stagingResourceGroup": "",
+        "vmProfile": {
+            "osDiskSizeGB": 127,
+            "vmSize": "Standard_D2s_v4"
+        }
+    }
+}
